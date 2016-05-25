@@ -1,0 +1,28 @@
+
+
+
+
+<h1>Sign Up to Beer Time</h1>
+
+<%= form_tag '/sign_up' do |f|  %>
+
+  <p>
+    <%= label_tag :name %>
+    <%= text_field_tag :name %>
+  </p>
+  <p>
+    <%= label_tag :email %>
+    <%= text_field_tag :email %>
+  </p>
+    <p>
+    <%= label_tag :password %>
+    <%= password_field_tag :password %>
+  </p>
+  <p>
+  <%= label_tag :password_confirmation %>
+  <%= password_field_tag :password_confirmation %>
+  </p>
+
+  <button>LETS DO THIS</button>
+
+<% end %>
